@@ -2,7 +2,7 @@
 using BethanyPieShop.Models.Repositories;
 using Moq;
 
-namespace BethanyPieShopTests.Controllers
+namespace BethanyPieShopTests.Mocks
 {
     public class RepositoryMocks
     {
@@ -158,6 +158,7 @@ namespace BethanyPieShopTests.Controllers
                     AllergyInformation = ""
                 },
             };
+
             var mockPieRepository = new Mock<IPieRepository>();
             mockPieRepository.Setup(repo => repo.AllPies).Returns(pies);
             mockPieRepository.Setup(repo => repo.PiesOfTheWeek).Returns(pies.Where(p => p.IsPieOfTheWeek));
