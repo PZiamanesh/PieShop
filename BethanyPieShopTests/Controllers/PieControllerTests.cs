@@ -1,6 +1,10 @@
 ﻿namespace BethanyPieShopTests.Controllers
 {
-    internal class PieControllerTests
+    public class PieControllerTests
     {
+        public void ListNoCategoryNameReturnAllPies()
+        {
+
+        }
     }
 }
