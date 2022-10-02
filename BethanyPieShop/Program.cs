@@ -22,6 +22,7 @@ builder.Services.AddDbContext<PieShopDbContext>(option =>
     option.UseSqlServer(builder.Configuration["ConnectionStrings:PieShopSqlContext"]);
 });
 
+
 // HTTP request pipeline
 var app = builder.Build();
 
